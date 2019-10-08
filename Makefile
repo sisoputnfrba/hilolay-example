@@ -25,4 +25,4 @@ example:
 	$(CC) -L./$(BUILD)/ -Wall $(CFLAGS) -o $(BUILD)/example example_program.c -l$(NAME) -lhilolay
 	
 test: clean all example
-	./$(BUILD)/example
+	LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):./$(BUILD) ./$(BUILD)/example

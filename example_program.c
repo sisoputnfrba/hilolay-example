@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <libc.h>
+#include <unistd.h>
 #include <hilolay/hilolay.h>
 
 void recursiva(int cant) {

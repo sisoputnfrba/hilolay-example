@@ -46,11 +46,12 @@ int main() {
     struct hilolay_t th1;
     struct hilolay_t th2;
 
-	hilolay_create(&th1, NULL, &test1, NULL);
-	hilolay_create(&th2, NULL, &test2, NULL);
+	// hilolay_create(&th1, NULL, &test1, NULL);
+	// hilolay_create(&th2, NULL, &test2, NULL);
 
-	hilolay_join(&th2);
-	hilolay_join(&th1);
-
+	// hilolay_join(&th2);
+	// hilolay_join(&th1);
+    printf("Finishinggggg");
+    hilolay_close();
 	return 0;
 }

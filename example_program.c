@@ -51,6 +51,5 @@ int main() {
 
 	hilolay_join(&th2);
 	hilolay_join(&th1);
-
-	return 0;
+    return hilolay_return(0);
 }

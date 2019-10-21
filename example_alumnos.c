@@ -28,11 +28,23 @@ int suse_close(int tid){
 	return 0;
 }
 
+int suse_wait(int tid, char *sem_name){
+	// Not supported
+	return 0;
+}
+
+int suse_signal(int tid, char *sem_name){
+	// Not supported
+	return 0;
+}
+
 static struct hilolay_operations hiloops = {
 		.suse_create = &suse_create,
 		.suse_schedule_next = &suse_schedule_next,
 		.suse_join = &suse_join,
-		.suse_close = &suse_close
+		.suse_close = &suse_close,
+		.suse_wait = &suse_wait,
+		.suse_signal = &suse_signal
 };
 
 void hilolay_init(void){
